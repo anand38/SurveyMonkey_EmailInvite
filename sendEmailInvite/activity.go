@@ -88,7 +88,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error) {
 		return true, nil
 	} else {
 		surveyID = gjson.Get(reqSurveyID, "data.0.id").String()
-		log.Debugf("srveyId: [%s]" surveyID)
+		log.Debugf("srveyId: [%s]", surveyID)
 		fmt.Println("surveyId: " + surveyID)
 	}
 
